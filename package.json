@@ -22,7 +22,7 @@
     "react-native": "*"
   },
   "dependencies": {
-    "fbemitter": "3.0.0"
+    "fbemitter": "^2.1.1"
   },
   "devDependencies": {
     "@types/fbemitter": "^2.0.32",
