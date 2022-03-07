@@ -7,12 +7,9 @@
 //
 
 #import <React/RCTViewManager.h>
-#import <UIKit/UIKit.h>
-
-#ifdef FB_AUDIENCE_ENABLED
 #import <FBAudienceNetwork/FBAudienceNetwork.h>
+#import <UIKit/UIKit.h>
 
 @interface AdChoiceManager : RCTViewManager
 @end
 
-#endif

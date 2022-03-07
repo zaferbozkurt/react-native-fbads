@@ -1,8 +1,6 @@
 #import "EXNativeAdView.h"
-#import <React/RCTUtils.h>
-
-#ifdef FB_AUDIENCE_ENABLED
 #import <FBAudienceNetwork/FBAudienceNetwork.h>
+#import <React/RCTUtils.h>
 
 @interface EXNativeAdView ()
 
@@ -62,5 +60,3 @@
 }
 
 @end
-
-#endif
