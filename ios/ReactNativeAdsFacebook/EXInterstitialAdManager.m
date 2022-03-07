@@ -1,9 +1,12 @@
 #import "EXInterstitialAdManager.h"
 #import "EXUnversioned.h"
 
-#import <FBAudienceNetwork/FBAudienceNetwork.h>
+
 #import <React/RCTUtils.h>
 #import <React/RCTLog.h>
+
+#ifdef FB_AUDIENCE_ENABLED
+#import <FBAudienceNetwork/FBAudienceNetwork.h>
 
 @interface EXInterstitialAdManager () <FBInterstitialAdDelegate>
 
@@ -160,3 +163,5 @@ RCT_EXPORT_METHOD(
 }
 
 @end
+
+#endif

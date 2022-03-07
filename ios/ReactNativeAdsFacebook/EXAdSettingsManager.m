@@ -4,6 +4,8 @@
 //#import <FBAudienceNetwork/FBAudienceNetwork.h>
 #import <React/RCTUtils.h>
 #import <React/RCTConvert.h>
+
+#ifdef FB_AUDIENCE_ENABLED
 #import <FBAudienceNetwork/FBAudienceNetwork.h>
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 
@@ -176,3 +178,5 @@ RCT_EXPORT_METHOD(setAdvertiserTrackingEnabled:(BOOL)enabled)
 }
 
 @end
+
+#endif

@@ -1,7 +1,9 @@
 #import "EXBannerView.h"
 
-#import <FBAudienceNetwork/FBAudienceNetwork.h>
 #import <React/RCTUtils.h>
+
+#ifdef FB_AUDIENCE_ENABLED
+#import <FBAudienceNetwork/FBAudienceNetwork.h>
 
 @interface EXBannerView () <FBAdViewDelegate>
 
@@ -94,3 +96,5 @@
 - (void)adViewWillLogImpression:(FBAdView *)adView {}
 
 @end
+
+#endif

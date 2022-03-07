@@ -1,7 +1,10 @@
-#import <FBAudienceNetwork/FBNativeAd.h>
 #import <React/RCTView.h>
 #import <React/RCTBridge.h>
 #import <React/RCTComponent.h>
+
+
+#ifdef FB_AUDIENCE_ENABLED
+#import <FBAudienceNetwork/FBNativeAd.h>
 
 @interface EXNativeAdView : RCTView
 
@@ -15,3 +18,5 @@
 - (void)registerViewsForInteraction:(FBMediaView *)mediaView adIcon:(FBMediaView *)adIconView clickableViews:(NSArray<UIView *> *)clickable;
 
 @end
+
+#endif

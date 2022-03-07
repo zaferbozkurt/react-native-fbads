@@ -7,9 +7,11 @@
 //
 
 #import <React/RCTView.h>
-#import <FBAudienceNetwork/FBAudienceNetwork.h>
 #import <UIKit/UIKit.h>
 #import <React/RCTBridge.h>
+
+#ifdef FB_AUDIENCE_ENABLED
+#import <FBAudienceNetwork/FBAudienceNetwork.h>
 
 @interface AdChoiceView : RCTView
 
@@ -20,3 +22,5 @@
 - (instancetype)initWithBridge:(RCTBridge *)bridge;
 
 @end
+
+#endif
